@@ -1,0 +1,21 @@
+{
+    "commit-msg": {
+        "enabled": false,
+        "actions": []
+    },
+    "pre-commit": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "./vendor/bin/pint -v",
+                "options": [],
+                "conditions": []
+            },
+            {
+                "action": "./vendor/bin/pest",
+                "options": [],
+                "conditions": []
+            }
+        ]
+    }
+}
